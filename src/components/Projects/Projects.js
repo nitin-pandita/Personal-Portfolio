@@ -2,14 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import Movie from "../../Assets/Projects/Moive.png";
 import game from "../../Assets/Projects/stone-paper-scisssor.jpg";
 import Fashionwear from "../../Assets/Projects/NitinFashionWear.png";
-import dibetes from "../../Assets/Projects/dibetics.jpg"
-
+import dibetes from "../../Assets/Projects/dibetics.jpg";
+import melodiymix from "../../Assets/melodymix.png";
+import GameHub from "../../Assets/gamehub.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -29,7 +27,26 @@ function Projects() {
               title="Movie Recommendation System"
               description="Movie Recommendation System will help you to recommend you some movies that you might be interested in watching"
               ghLink="https://github.com/nitin-pandita/Movie-Recommender-System.git"
-              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={melodiymix}
+              isBlog={false}
+              title="MelodyMix"
+              description="Melody Mix is a music player where you can listen to your favorite song"
+              ghLink="https://github.com/nitin-pandita/MelodyMix.git"
+              demoLink="https://melodymix.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={GameHub}
+              isBlog={false}
+              title="GameHub"
+              description="GameHub, the ultimate gaming paradise for all gamers, brought to life by a passionate team of gaming enthusiasts! GameHub is not just a gaming platform; it's an immersive universe designed to revolutionize your gaming experience like never before."
+              ghLink="https://github.com/nitin-pandita/GameHub.git"
+              demoLink="https://gamehub-nitin.netlify.app/"
             />
           </Col>
 
@@ -44,7 +61,6 @@ function Projects() {
             />
           </Col>
 
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dibetes}
@@ -52,7 +68,6 @@ function Projects() {
               title="Diabetes Prediction"
               description="Using Machine Learning created a Diabetes Prediction Model for predicting whether the person is suffering from Diabetes or not."
               ghLink="https://github.com/nitin-pandita/Diabetes-Prediction-Model.git"
-              
             />
           </Col>
 
