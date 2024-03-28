@@ -24,27 +24,27 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Python, Web Scarping and Model Building. </b>
+                <b className="purple">
+                  {" "}
+                  Frontend Development, UI/ UX Designing, Machine Learning
+                </b>
               </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Data Science and Technology </b> and
-                also in areas related to{" "}
                 <b className="purple">
-                  Cloud.
-                </b>
+                  Web Applications and Mobile Applications{" "}
+                </b>{" "}
+                and also in areas related to{" "}
+                <b className="purple">Machine Learning.</b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing models
               with <b className="purple">Machine Learning</b> and
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Python Libraries 
-                </b>
+                <b className="purple"> Modern Python Libraries</b>
               </i>
               &nbsp; like
               <i>

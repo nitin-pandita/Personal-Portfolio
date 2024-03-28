@@ -6,8 +6,11 @@ import Movie from "../../Assets/Projects/Moive.png";
 import game from "../../Assets/Projects/stone-paper-scisssor.jpg";
 import Fashionwear from "../../Assets/Projects/NitinFashionWear.png";
 import dibetes from "../../Assets/Projects/dibetics.jpg";
+import Ai from "../../Assets/Projects/AI.png";
+import Netflix from "../../Assets/Projects/NEFTLIX.png";
 import melodiymix from "../../Assets/melodymix.png";
 import GameHub from "../../Assets/gamehub.png";
+import FoodJet from "../../Assets/Projects/FoodJet.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -22,6 +25,27 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Ai}
+              isBlog={false}
+              title="Ai Summarizer"
+              ghLink="https://github.com/nitin-pandita/Ai-Summarizer.git"
+              description="Ai summarizer is a website where you can summarize the article or blog. You can also get the summary of the article or blog in the form of a summary."
+              demoLink="https://articles-ai-summarizer.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Netflix}
+              isBlog={false}
+              title="NETFLIX GPT"
+              ghLink="https://github.com/nitin-pandita/FoodJet.git"
+              description="NETFLIX GPT is a website where you can search for movies and TV shows and get the details of the movie and TV show. With the help of GPT-3, you can also get the summary of the movie or TV show."
+              demoLink="https://netflix-gpt-sigma-one.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Movie}
               isBlog={false}
               title="Movie Recommendation System"
@@ -29,6 +53,17 @@ function Projects() {
               ghLink="https://github.com/nitin-pandita/Movie-Recommender-System.git"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={FoodJet}
+              isBlog={false}
+              title="FoodJet"
+              ghLink="https://github.com/nitin-pandita/FoodJet.git"
+              description="Movie Food Ordering Website with Payment Gateway, search and filter, and authentication, etc."
+              demoLink="https://github.com/nitin-pandita/FoodJet.git"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={melodiymix}

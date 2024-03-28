@@ -10,7 +10,8 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Nitin Pandita </span>
             from <span className="purple"> J&K, India.</span>
-            <br /> I am a data science final year student.
+            <br /> I am a Frontend Developer with React.js, Redux, and Next.js
+            as my tech stack.
             <br />
             Additionally, I am currently working on Open Source Projects.
             <br />
@@ -19,19 +20,17 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Drawing and Sketching
             </li>
             <li className="about-activity">
               <ImPointRight /> Writing Tech Blogs
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Traveling
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "I play with Data"{" "}
-          </p>
+          <p style={{ color: "rgb(155 126 172)" }}>"I play with Data" </p>
           <footer className="blockquote-footer">Nitin</footer>
         </blockquote>
       </Card.Body>

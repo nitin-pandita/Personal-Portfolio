@@ -2,9 +2,9 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
+import { AiFillSafetyCertificate } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
-
-function ProjectCards(props) {
+function CertificateCard(props) {
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -13,9 +13,9 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : props.isLink ? "Link" : "GitHub"}
+        <Button variant="primary" href={props.crLink} target="_blank">
+          <AiFillSafetyCertificate /> &nbsp;
+          {props.isBlog ? "Certificate" : "Link"}
         </Button>
         {"\n"}
         {"\n"}
@@ -30,11 +30,11 @@ function ProjectCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {"Preview"}
           </Button>
         )}
       </Card.Body>
     </Card>
   );
 }
-export default ProjectCards;
+export default CertificateCard;

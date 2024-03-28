@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiFillSafetyCertificate,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -39,7 +40,12 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" style={{ height: "850px" }} />
+          <img
+            src={logo}
+            className="img-fluid logo"
+            alt="brand"
+            style={{ height: "850px" }}
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -79,6 +85,17 @@ function NavBar() {
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Projects
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/certificate"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiFillSafetyCertificate style={{ marginBottom: "2px" }} />{" "}
+                Certifications
               </Nav.Link>
             </Nav.Item>
 
