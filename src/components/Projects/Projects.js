@@ -11,6 +11,8 @@ import Netflix from "../../Assets/Projects/NEFTLIX.png";
 import melodiymix from "../../Assets/melodymix.png";
 import GameHub from "../../Assets/gamehub.png";
 import FoodJet from "../../Assets/Projects/FoodJet.png";
+import FridayAi from "../../Assets/Projects/FirdayAi.png";
+
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,6 +25,27 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={FridayAi}
+              isBlog={false}
+              title="Friday Ai Interviewer"
+              ghLink="https://github.com/nitin-pandita/Friday-AiInterviewer.git"
+              description="AI generated Interview - Friday AI Interiviewer"
+              demoLink="https://friday-ai-interviewer.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={melodiymix}
+              isBlog={false}
+              title="MelodyMix"
+              description="Melody Mix is a music player where you can listen to your favorite song"
+              ghLink="https://github.com/nitin-pandita/MelodyMix.git"
+              demoLink="https://melodymix.netlify.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Ai}
@@ -38,9 +61,9 @@ function Projects() {
               imgPath={Netflix}
               isBlog={false}
               title="NETFLIX GPT"
-              ghLink="https://github.com/nitin-pandita/FoodJet.git"
+              ghLink="https://github.com/nitin-pandita/Netflix-GPT.git"
               description="NETFLIX GPT is a website where you can search for movies and TV shows and get the details of the movie and TV show. With the help of GPT-3, you can also get the summary of the movie or TV show."
-              demoLink="https://netflix-gpt-sigma-one.vercel.app/"
+              demoLink="https://netflix-2p13xd72f-nitin-pandita.vercel.app/browse"
             />
           </Col>
 
@@ -64,16 +87,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={melodiymix}
-              isBlog={false}
-              title="MelodyMix"
-              description="Melody Mix is a music player where you can listen to your favorite song"
-              ghLink="https://github.com/nitin-pandita/MelodyMix.git"
-              demoLink="https://melodymix.netlify.app/"
-            />
-          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={GameHub}
